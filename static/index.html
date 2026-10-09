@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tergov va surishtiruv amaliyoti uchun OSINT tekshiruv vositalari katalogi">
+  <meta name="color-scheme" content="light dark">
+  <title>RKITI OSINT — ochiq manbalarni tekshirish</title>
+  <script>
+    (() => {
+      const saved = localStorage.getItem("osint-theme");
+      const theme = saved || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.dataset.theme = theme;
+      document.documentElement.classList.toggle("category-route", /^\/category\/[a-z0-9-]+\/?$/i.test(location.pathname));
+      document.documentElement.classList.toggle("guide-route", /^\/guide\/?$/i.test(location.pathname));
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Inter:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="/static/styles.css?v=20260914-12">
+  <script src="/static/i18n.js?v=20260914-2" defer></script>
+  <script src="/static/icon-system.js?v=20260912-3" defer></script>
+  <script src="/static/ui-icons.js?v=20260912-3" defer></script>
+  <script src="/static/app.js?v=20260914-7" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#catalog">Asosiy katalogga o'tish</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="RKITI OSINT bosh sahifasi">
+        <img src="/static/institute-logo.png" alt="Raqamli kriminalistika ilmiy-tadqiqot instituti gerbi">
+        <span class="brand-copy"><b>Raqamli kriminalistika<br>ilmiy-tadqiqot instituti</b><i aria-hidden="true"></i><strong data-no-transliterate>OSINT</strong></span>
+      </a>
+      <nav id="primary-nav" class="primary-nav" aria-label="Asosiy navigatsiya"><a href="/#catalog">Vositalar</a><a href="/#directions">Yo'nalishlar</a><a href="/guide">Qo'llanma</a></nav>
+      <div class="header-controls">
+        <button id="mobile-menu-toggle" class="icon-button mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Asosiy menyuni ochish"><span data-ui-icon="menu"></span></button>
+        <button id="language-toggle" class="language-toggle" type="button" aria-label="Yozuvni almashtirish">UZ / ЎЗ</button>
+        <button id="theme-toggle" class="icon-button theme-toggle" type="button" aria-label="Tantanali moviy rang rejimini yoqish"><span class="theme-moon" data-ui-icon="moon"></span><span class="theme-sun" data-ui-icon="sun"></span></button>
+        <div class="contact-wrap">
+          <button id="contact-button" class="contact-button" type="button" aria-expanded="false" aria-controls="contact-menu"><span data-ui-icon="message"></span><span>Mutaxassis bilan aloqa</span></button>
+          <div id="contact-menu" class="contact-menu hidden" aria-labelledby="contact-button">
+            <a id="contact-telegram" class="contact-option is-disabled" aria-disabled="true" tabindex="-1"><span class="contact-option-icon" data-ui-icon="message"></span><span class="contact-option-copy"><strong>Telegram bot</strong><small id="contact-telegram-meta">Bot sozlanmagan</small></span><span class="contact-option-arrow" data-ui-icon="external"></span></a>
+            <a class="contact-option" href="tel:+998915000755"><span class="contact-option-icon" data-ui-icon="phone"></span><span class="contact-option-copy"><strong>Telefon</strong><small data-no-transliterate>+998 91 500 07 55</small></span><span class="contact-option-arrow" data-ui-icon="arrowRight"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="smooth-wrapper">
+  <div id="smooth-content">
+  <main>
+    <section class="hero-section" aria-label="OSINT qidiruv tizimi">
+      <div id="hero-streams" class="hero-streams" aria-hidden="true" data-no-transliterate></div>
+      <div class="container hero-container">
+        <a id="back-link" class="back-link hidden" href="/"><span data-ui-icon="arrowLeft"></span> Tekshiruv yo'nalishlariga qaytish</a>
+        <div class="hero-layout">
+          <div class="hero-command-copy">
+            <p class="command-eyebrow">Mazkur platforma <span class="command-accent">tergov-protsessual</span> harakatlarni o'tkazish uchun ahamiyatli ma'lumotlarni <span class="command-accent" data-no-transliterate>OSINT</span> (ochiq manbalarda qidiruv) orqali <span class="command-accent">tezkor olish</span> imkonini beradi.</p>
+            <h1 data-no-transliterate>OSINT</h1>
+          </div>
+        </div>
+
+        <div class="hero-search-panel">
+          <div class="search-shell" id="search-drop-zone"><span class="search-mark" data-ui-icon="search"></span><label class="sr-only" for="global-search">Vosita yoki indikatorni qidirish</label><input id="global-search" type="search" autocomplete="off" spellcheck="false" placeholder="Kriptoaktiv hamyon, @username, ID, domen, IP, email, hash ..."><input id="file-search-input" class="sr-only" type="file" accept="image/*,video/*"><button id="file-search-button" class="file-search-button" type="button" aria-label="Rasm yoki video tanlash" title="Rasm yoki video tanlash"><span data-ui-icon="upload"></span><b>Rasm / video</b></button><button id="clear-search" class="clear-search hidden" type="button" aria-label="Qidiruv mezonini tozalash"><span data-ui-icon="x"></span></button><kbd data-no-transliterate>Enter</kbd></div>
+          <p id="file-feedback" class="file-feedback hidden" role="alert"></p>
+          <div id="selected-file" class="selected-file hidden" role="status" aria-live="polite"><div id="selected-file-preview" class="selected-file-preview" aria-hidden="true"></div><div class="selected-file-copy"><b id="selected-file-name"></b><span id="selected-file-meta"></span><small id="selected-file-hash" data-no-transliterate></small></div><button id="remove-selected-file" type="button" aria-label="Tanlangan faylni olib tashlash"><span data-ui-icon="x"></span></button></div>
+          <div id="detected-type" class="detected-type hidden" role="status"></div>
+          <section id="tool-recommendations" class="tool-recommendations hidden" aria-labelledby="recommendations-title"><div class="recommendations-heading"><p id="recommendations-title">Tavsiya etilgan vositalar</p><span id="recommendations-context"></span></div><div id="recommendation-list" class="recommendation-list"></div></section>
+        </div>
+      </div>
+      <section id="tool-wall" class="tool-wall home-only" aria-label="Tezkor OSINT vositalari"><div id="marquee-rows" class="marquee-rows"></div></section>
+    </section>
+
+    <section id="category-intro" class="category-intro-section hidden" aria-labelledby="page-title">
+      <div class="container">
+        <div class="hero-route-copy"><p class="hero-kicker">TANLANGAN TEKSHIRUV YO'NALISHI</p><h1 id="page-title">OSINT vositalari</h1><p id="page-subtitle">Tekshiruv predmetiga mos ochiq manbalarni tanlang.</p></div>
+      </div>
+    </section>
+
+    <section id="directions" class="directions-section home-only" aria-labelledby="directions-title"><div class="container"><header class="directions-heading reveal-on-scroll"><p class="section-kicker">TEKSHIRUV YO'NALISHLARI</p><h2 id="directions-title">Tekshiruv yo'nalishini tanlang</h2><p>Har bir yo'nalish tekshiruv predmetiga mos ochiq manbalar va vositalarni aniqlash uchun shakllantirilgan.</p></header><div id="story-list" class="story-list"></div></div></section>
+
+    <section id="catalog" class="catalog-section" aria-live="polite"><div class="container"><div class="catalog-heading"><div><p class="section-kicker" id="section-eyebrow">OSINT vositalari</p><h2 id="section-title">Tekshiruv uchun ochiq manbalar katalogi</h2></div><span id="result-count" class="result-count"></span></div><div id="card-grid" class="card-grid"></div><div id="empty-state" class="empty-state hidden"><p class="section-kicker">Mos yozuv aniqlanmadi</p><h3 id="empty-title">So'rov bo'yicha natija aniqlanmadi</h3><p id="empty-copy">Kiritilgan ma'lumotni tekshiring yoki boshqa tekshiruv mezonini tanlang.</p><button id="reset-empty" type="button">Qidiruv mezonlarini tozalash</button></div></div></section>
+
+    <section id="guide-page" class="guide-page hidden" aria-labelledby="guide-title">
+      <div class="container guide-container">
+        <header class="guide-intro reveal-on-scroll">
+          <p id="guide-eyebrow" class="section-kicker"></p>
+          <h1 id="guide-title"></h1>
+          <p id="guide-description"></p>
+        </header>
+        <div id="guide-tabs" class="guide-tabs" role="tablist" aria-label="Tekshiruv bosqichlari"></div>
+        <section id="guide-panel" class="guide-panel" role="tabpanel" tabindex="0" aria-live="polite">
+          <div class="guide-copy">
+            <p id="guide-detail-index" class="guide-detail-index"></p>
+            <h2 id="guide-detail-title"></h2>
+            <p id="guide-detail-description"></p>
+            <aside id="guide-tip" class="guide-tip"></aside>
+          </div>
+          <div id="guide-demo" class="guide-demo" aria-label="Tanlangan qadamning amaliy ko'rinishi"></div>
+        </section>
+        <nav class="guide-controls" aria-label="Qo'llanma qadamlari">
+          <button id="guide-prev" type="button">← Олдинги</button>
+          <span id="guide-status" aria-live="polite"></span>
+          <button id="guide-next" type="button">Кейинги →</button>
+        </nav>
+      </div>
+    </section>
+
+  </main>
+
+  <footer><div class="container footer-grid">
+    <div class="footer-institute"><div class="footer-brand"><img src="/static/institute-logo.png" alt=""><div><b>Raqamli kriminalistika<br>ilmiy-tadqiqot instituti</b><strong data-no-transliterate>OSINT</strong></div></div><p>Ochiq manbalardagi raqamli ma'lumotlarni tekshirish vositalari katalogi.</p><small>© <span id="year"></span> Barcha huquqlar himoyalangan.</small></div>
+    <div class="footer-contact"><h2>Bog'lanish</h2><p>Yunusobod tumani, Rixsiliy ko'chasi, 9-uy</p><a href="tel:+998915000755" data-no-transliterate>+998 91 500 07 55</a><a href="https://yandex.uz/maps/-/CThgEQib" target="_blank" rel="noopener noreferrer"><span data-no-transliterate>Yandex Maps</span> orqali ochish <span data-ui-icon="external"></span></a></div>
+    <div class="footer-map"><iframe src="https://yandex.uz/map-widget/v1/?ll=69.272961%2C41.374588&amp;z=17&amp;pt=69.272961%2C41.374588%2Cpm2rdm" title="Raqamli kriminalistika ilmiy-tadqiqot instituti xaritasi" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><a href="https://yandex.uz/maps/-/CThgEQib" target="_blank" rel="noopener noreferrer" aria-label="Institut manzilini Yandex Maps orqali ochish" data-no-transliterate>Yandex Maps <i data-ui-icon="external"></i></a></div>
+  </div></footer>
+  </div>
+  </div>
+
+  <div id="details-modal" class="details-modal hidden" role="dialog" aria-modal="true" aria-labelledby="details-title"><div class="details-backdrop" data-close-details></div><section class="details-dialog" tabindex="-1"><div class="details-head"><div class="details-heading"><span class="details-icon" aria-hidden="true"><img class="details-icon-image" alt=""><span class="details-icon-text">OS</span></span><div><p id="details-kind" class="section-kicker">OSINT vositasi</p><h2 id="details-title">Tekshiruv ma'lumotlari</h2></div></div><button class="details-close" type="button" data-close-details aria-label="Yopish"><span data-ui-icon="x"></span></button></div><div class="details-body"><p id="details-summary" class="details-summary"></p><div id="details-content" class="details-content"></div><div id="details-meta" class="details-meta"></div></div><div class="details-actions"><button class="details-secondary" type="button" data-close-details>Yopish</button><a id="details-action" class="details-primary" href="#">Tashqi vositani ochish <span data-ui-icon="external"></span></a></div></section></div>
+
+  <template id="category-card-template"><article class="feature-card category-card"><div class="card-topline"><span class="card-index"></span><span class="tool-count access-badge"></span></div><div class="card-identity-row"><div class="card-identity" aria-hidden="true"><span class="card-icon"><img class="card-icon-image" alt=""><span class="card-icon-text"></span></span><span class="card-icon-label"></span></div><button class="details-button" type="button"><b>Batafsil</b><span data-ui-icon="plus"></span></button></div><a class="card-main-link"><h3></h3><p class="card-description"></p><div class="card-bottom"><div class="card-tags"></div><span class="card-arrow" data-ui-icon="arrowRight"></span></div></a></article></template>
+  <template id="tool-card-template"><article class="feature-card tool-card"><div class="card-topline"><span class="card-index"></span><span class="access-badge"></span></div><div class="card-identity-row"><div class="card-identity" aria-hidden="true"><span class="card-icon"><img class="card-icon-image" alt=""><span class="card-icon-text"></span></span><span class="card-icon-label"></span></div><button class="details-button tool-details-button" type="button"><b>Batafsil</b><span data-ui-icon="plus"></span></button></div><a class="card-main-link" target="_blank" rel="noopener noreferrer"><h3 data-no-transliterate></h3><p class="card-description"></p><div class="card-bottom"><div class="card-tags"></div><span class="card-arrow" data-ui-icon="external"></span></div></a></article></template>
+</body>
+</html>

@@ -1,0 +1,1174 @@
+{
+  "format": "osint-navigator-catalog",
+  "version": 1,
+  "exported_at": "2026-09-11T11:52:08.488923Z",
+  "categories": [
+    {
+      "name": "Kriptoaktiv hamyon va tranzaksiya hashi",
+      "slug": "crypto",
+      "description": "Kriptoaktiv hamyon manzili yoki tranzaksiya hashi bo'yicha blokcheyn yozuvlari, mablag'lar harakati va reputatsiyaga oid ochiq ma'lumotlarni tekshirish.",
+      "details": "Mazkur yo'nalishdagi vositalar yordamida quyidagi tekshiruvlarni amalga oshirish mumkin:\n- BTC, ETH, TRON va boshqa qo'llab-quvvatlanadigan tarmoqlarda hamyon manzili yoki tranzaksiya hashini tekshirish.\n- Tranzaksiya holati, vaqt belgisi, yuboruvchi va qabul qiluvchi manzillar hamda o'tkazilgan aktivlar haqidagi ochiq yozuvlarni ko'rish.\n- Hamyonlar o'rtasidagi mablag'lar oqimi, ehtimoliy klaster va ochiq reputatsiya belgilarini qiyosiy tahlil qilish.\n\nNatijalarni qayd etish tartibi:\n- Tekshirilgan tarmoq, indikator, vosita URL manzili, sana-vaqt va ahamiyatli tranzaksiya identifikatorlarini qayd eting.\n- Blokcheyn yozuvidagi manzil yoki klaster muayyan shaxsga tegishli ekanini qo'shimcha dalillarsiz tasdiqlangan deb hisoblamang.\n- Muhim holatlarni kamida ikkita mustaqil explorer yoki boshqa ishonchli manba orqali qiyosiy tekshiring.",
+      "icon": "₿",
+      "tags": [
+        "BTC",
+        "ETH",
+        "TRON",
+        "XMR"
+      ],
+      "featured": false,
+      "sort_order": 10,
+      "enabled": true
+    },
+    {
+      "name": "Telegram manbalarini tekshirish",
+      "slug": "telegram",
+      "description": "Telegram username, public ID, ochiq kanal va guruhlar bo'yicha profil, kontent, faollik hamda bog'lanishga oid ma'lumotlarni tekshirish.",
+      "details": "Mazkur yo'nalishdagi vositalar yordamida quyidagi tekshiruvlarni amalga oshirish mumkin:\n- Telegram username, public ID yoki ochiq havola bo'yicha mavjud profil, kanal yoxud guruh yozuvlarini aniqlash.\n- Ochiq kanal tavsifi, postlar, havolalar, auditoriya ko'rsatkichlari va faollik davrlarini tekshirish.\n- Turli xizmatlarda qayd etilgan ochiq ma'lumotlarni qiyoslash va keyingi tekshiruv yo'nalishlarini belgilash.\n\nNatijalarni qayd etish tartibi:\n- Username, public ID, manba havolasi, ko'rilgan sana-vaqt va tekshiruv uchun ahamiyatli ochiq yozuvlarni qayd eting.\n- Tashqi botlarga parol, autentifikatsiya kodi, access token, tergov siri yoki oshkor etilishi cheklangan ma'lumot yubormang.\n- Bir xil username yoki nom mosligi shaxs aynanligini tasdiqlamasligini inobatga olib, natijani mustaqil manbalar bilan tekshiring.",
+      "icon": "telegram",
+      "tags": [
+        "Username",
+        "Kanal",
+        "ID"
+      ],
+      "featured": true,
+      "sort_order": 20,
+      "enabled": true
+    },
+    {
+      "name": "Username va ijtimoiy tarmoq profillari",
+      "slug": "username",
+      "description": "Username, shaxs nomi, email yoki telefon raqami bo'yicha ochiq platformalardagi ehtimoliy profillar va username mavjudligini tekshirish.",
+      "details": "Mazkur yo'nalishdagi vositalar yordamida quyidagi tekshiruvlarni amalga oshirish mumkin:\n- Username turli ochiq platformalarda ishlatilayotgani yoki foydalanish uchun mavjudligini dastlabki tekshirish.\n- Shaxs nomi, email yoki telefon raqami bo'yicha ehtimoliy ochiq profil va havolalarni aniqlash.\n- Topilgan profillardagi nom, tasvir, tavsif, havola va boshqa ochiq identifikatorlarni o'zaro qiyoslash.\n\nNatijalarni qayd etish tartibi:\n- So'rov qiymati, platforma, profil URL manzili, ko'rilgan sana-vaqt va moslikni asoslovchi belgilarni qayd eting.\n- Bir xil username yoki aloqa identifikatori profillarning aynan bir shaxsga tegishli ekanini mustaqil ravishda tasdiqlamaydi.\n- Har bir ahamiyatli moslikni qo'shimcha identifikator va kamida bitta mustaqil manba orqali tekshiring.",
+      "icon": "@",
+      "tags": [
+        "Username",
+        "Social",
+        "Profil"
+      ],
+      "featured": false,
+      "sort_order": 30,
+      "enabled": true
+    },
+    {
+      "name": "Qidiruv tizimlari",
+      "slug": "search",
+      "description": "Google Search, Yandex Search, Microsoft Bing va 2GIS orqali shaxs, tashkilot, aloqa identifikatori, manzil, texnik indikator yoki kalit so'zga oid ochiq ma'lumotlarni qidirish.",
+      "details": "Mazkur yo'nalishdagi vositalar yordamida quyidagi tekshiruvlarni amalga oshirish mumkin:\n- Shaxs nomi, username, telefon raqami, email, IP manzil, domen, URL yoki boshqa kalit so'z bo'yicha indekslangan ochiq manbalarni qidirish.\n- Qidiruv operatorlari yordamida natijalarni muayyan domen, fayl turi, sana yoki aniq ibora bo'yicha aniqlashtirish.\n- Turli qidiruv tizimlari natijalarini qiyoslash orqali qo'shimcha manba va bog'lanishlarni aniqlash.\n- 2GIS orqali tashkilot nomi, manzil yoki telefon raqami bo'yicha ochiq xarita va katalog yozuvlarini tekshirish.\n\nNatijalarni qayd etish tartibi:\n- Ahamiyatli natijaning sarlavhasi, URL manzili, qidiruv so'rovi hamda tekshiruv sanasi va vaqtini qayd eting.\n- Qidiruv natijasidagi ma'lumotni asl manbada tekshiring va kamida bitta mustaqil manba bilan qiyoslang.\n- Ism yoki boshqa belgi mosligi shaxs aynanligini mustaqil ravishda tasdiqlamasligini inobatga oling.\n- Xarita va katalogdagi foydalanuvchi tahriri hamda ma'lumotning yangilangan sanasini inobatga oling.",
+      "icon": "search",
+      "tags": [
+        "Google",
+        "Yandex",
+        "Bing",
+        "2GIS"
+      ],
+      "featured": true,
+      "sort_order": 35,
+      "enabled": true
+    },
+    {
+      "name": "Domen, IP va URL ma'lumotlari",
+      "slug": "network",
+      "description": "Domen, IP yoki URL bo'yicha ro'yxatdan o'tish, DNS, sertifikat, arxiv, infratuzilma va reputatsiyaga oid ochiq ma'lumotlarni tekshirish.",
+      "details": "Mazkur yo'nalishdagi vositalar yordamida quyidagi tekshiruvlarni amalga oshirish mumkin:\n- Domen va IP resurslari bo'yicha WHOIS yoki RDAP ro'yxatga olish yozuvlari, status va vakolatli xizmatlarni tekshirish.\n- DNS yozuvlari, subdomenlar, Certificate Transparency ma'lumotlari va bog'liq infratuzilmani aniqlash.\n- URL yoki domenning arxiv nusxalari, skan natijalari, yo'naltirishlari va ochiq reputatsiya belgilarini qiyoslash.\n\nNatijalarni qayd etish tartibi:\n- Tekshirilgan indikator, so'rov turi, vosita URL manzili, sana-vaqt va muhim texnik yozuvlarni qayd eting.\n- Ochiq skan xizmatiga maxfiy yoki xizmatga oid URL yuborishdan oldin uning oshkor bo'lish xavfini baholang.\n- Texnik resursning muayyan shaxs yoki tashkilotga tegishliligini qo'shimcha dalillarsiz tasdiqlangan deb hisoblamang.",
+      "icon": "⌁",
+      "tags": [
+        "IP",
+        "Domen",
+        "URL",
+        "DNS"
+      ],
+      "featured": true,
+      "sort_order": 40,
+      "enabled": true
+    },
+    {
+      "name": "APK, zararli fayl va phishing havolalarni tekshirish",
+      "slug": "mobile-threats",
+      "description": "APK, mobil ilova paketi, fayl, hash yoki shubhali URL bo'yicha zararli kod, xavfli ruxsatlar, reputatsiya va phishing belgilarini tekshirish.",
+      "details": "Mazkur yo'nalishdagi vositalar yordamida quyidagi tekshiruvlarni amalga oshirish mumkin:\n- APK yoki AAB faylining manifesti, ruxsatlari, komponentlari, sertifikati, kodi va resurslaridagi ehtimoliy xavf belgilarini dastlabki tahlil qilish.\n- Fayl hashi, paket nomi va boshqa identifikatorlar bo'yicha mavjud reputatsiya hamda avvalgi tahlil natijalarini tekshirish.\n- Shubhali URL bo'yicha yo'naltirishlar zanjiri, sahifa tasviri, tarmoq so'rovlari, reputatsiya va phishing belgilarini qiyosiy tahlil qilish.\n\nNatijalarni qayd etish tartibi:\n- Asl faylni o'zgartirmasdan saqlang; uning kriptografik hash qiymati, olingan manbasi, vosita URL manzili va tekshiruv sana-vaqtini qayd eting.\n- Tergov siri, xizmatga oid yoki oshkor etilishi cheklangan fayl va URLlarni public tahlil xizmatiga yuborishdan oldin tegishli vakolat hamda ma'lumotning oshkor bo'lish xavfini baholang; imkon qadar avval hash va mavjud hisobot bo'yicha qidiring.\n- Avtomatik tahlil natijasini yakuniy xulosa deb hisoblamang; ahamiyatli holatlarni kamida bitta mustaqil vosita va zarur hollarda ajratilgan ekspert muhitida tekshiring.",
+      "icon": "auto",
+      "tags": [
+        "APK",
+        "Android",
+        "Phishing",
+        "URL"
+      ],
+      "featured": false,
+      "sort_order": 50,
+      "enabled": true
+    },
+    {
+      "name": "Rasm, fayl va metadata tekshiruvi",
+      "slug": "media",
+      "description": "Rasm yoki fayl bo'yicha o'xshash manbalar, EXIF va metadata, ehtimoliy tahrir belgilari hamda hash reputatsiyasini tekshirish.",
+      "details": "Mazkur yo'nalishdagi vositalar yordamida quyidagi tekshiruvlarni amalga oshirish mumkin:\n- Reverse image search yordamida o'xshash tasvirlar, avvalgi e'lonlar va ehtimoliy dastlabki manbalarni aniqlash.\n- Rasm yoki fayldagi EXIF va boshqa metadata yozuvlarini ko'rish hamda ularning mavjudligini qayd etish.\n- Tasvirdagi siqilish farqlari, ehtimoliy tahrir belgilari va fayl hashining ochiq reputatsiyasini dastlabki tekshirish.\n\nNatijalarni qayd etish tartibi:\n- Asl fayl nusxasini o'zgartirmasdan saqlang, imkon qadar uning kriptografik hash qiymatini va olingan manbasini qayd eting.\n- Metadata mavjud emasligi fayl albatta tahrirlanganini, tahrir belgisi esa muayyan harakatni mustaqil ravishda tasdiqlamasligini inobatga oling.\n- Vosita URL manzili, tekshiruv sanasi, qo'llangan usul va ahamiyatli natijalarni qayd eting.",
+      "icon": "◈",
+      "tags": [
+        "Rasm",
+        "EXIF",
+        "Fayl",
+        "Hash"
+      ],
+      "featured": false,
+      "sort_order": 60,
+      "enabled": true
+    }
+  ],
+  "tools": [
+    {
+      "name": "Blockchair",
+      "slug": "blockchair",
+      "category_slug": "crypto",
+      "description": "Bir nechta blokcheyn bo'yicha hamyon manzili va tranzaksiya hashiga oid ma'lumotlarni tekshirish.",
+      "details": "",
+      "url": "https://blockchair.com/",
+      "query_url_template": "https://blockchair.com/search?q={query}",
+      "icon": "▦",
+      "input_types": [
+        "wallet",
+        "tx-hash"
+      ],
+      "networks": [
+        "BTC",
+        "ETH",
+        "BCH",
+        "LTC"
+      ],
+      "tags": [
+        "Explorer",
+        "Multi-chain"
+      ],
+      "access": "free",
+      "login_required": false,
+      "featured": true,
+      "sort_order": 10,
+      "enabled": true
+    },
+    {
+      "name": "Etherscan",
+      "slug": "etherscan",
+      "category_slug": "crypto",
+      "description": "Ethereum hamyon manzili, token, smart-kontrakt va tranzaksiyaga oid ma'lumotlarni tekshirish.",
+      "details": "",
+      "url": "https://etherscan.io/",
+      "query_url_template": "https://etherscan.io/search?f=0&q={query}",
+      "icon": "Ξ",
+      "input_types": [
+        "wallet",
+        "tx-hash",
+        "contract"
+      ],
+      "networks": [
+        "ETH",
+        "EVM"
+      ],
+      "tags": [
+        "Explorer",
+        "Smart contract"
+      ],
+      "access": "free",
+      "login_required": false,
+      "featured": true,
+      "sort_order": 20,
+      "enabled": true
+    },
+    {
+      "name": "OXT.me",
+      "slug": "oxt",
+      "category_slug": "crypto",
+      "description": "Bitcoin tranzaksiyalari grafigi va blokcheyn ma'lumotlarini tahlil qilish.",
+      "details": "",
+      "url": "https://oxt.me/",
+      "query_url_template": "",
+      "icon": "◫",
+      "input_types": [
+        "wallet",
+        "tx-hash"
+      ],
+      "networks": [
+        "BTC"
+      ],
+      "tags": [
+        "Graph",
+        "Privacy"
+      ],
+      "access": "free",
+      "login_required": false,
+      "featured": true,
+      "sort_order": 30,
+      "enabled": true
+    },
+    {
+      "name": "Bitcoin Who's Who",
+      "slug": "bitcoin-whos-who",
+      "category_slug": "crypto",
+      "description": "Bitcoin manzili reputatsiyasi va abuse hisobotlariga oid ochiq ma'lumotlarni tekshirish.",
+      "details": "",
+      "url": "https://bitcoinwhoswho.com/",
+      "query_url_template": "",
+      "icon": "₿",
+      "input_types": [
+        "wallet"
+      ],
+      "networks": [
+        "BTC"
+      ],
+      "tags": [
+        "Reputation",
+        "Abuse"
+      ],
+      "access": "free-tier",
+      "login_required": false,
+      "featured": false,
+      "sort_order": 50,
+      "enabled": true
+    },
+    {
+      "name": "Blockscan",
+      "slug": "blockscan",
+      "category_slug": "crypto",
+      "description": "EVM tarmoqlari bo'yicha hamyon manzili va tranzaksiyaga oid ma'lumotlarni tekshirish.",
+      "details": "",
+      "url": "https://blockscan.com/",
+      "query_url_template": "",
+      "icon": "⬡",
+      "input_types": [
+        "wallet",
+        "tx-hash"
+      ],
+      "networks": [
+        "EVM"
+      ],
+      "tags": [
+        "Multi-chain",
+        "Explorer"
+      ],
+      "access": "free",
+      "login_required": false,
+      "featured": false,
+      "sort_order": 60,
+      "enabled": true
+    },
+    {
+      "name": "Arkham Intelligence",
+      "slug": "arkham",
+      "category_slug": "crypto",
+      "description": "Kriptoaktiv subyektlari, hamyon manzillari va mablag'lar oqimini vizual tahlil qilish.",
+      "details": "",
+      "url": "https://platform.arkhamintelligence.com/",
+      "query_url_template": "",
+      "icon": "A",
+      "input_types": [
+        "wallet",
+        "tx-hash",
+        "entity"
+      ],
+      "networks": [
+        "Multi-chain"
+      ],
+      "tags": [
+        "Graph",
+        "Attribution"
+      ],
+      "access": "free-tier",
+      "login_required": true,
+      "featured": true,
+      "sort_order": 100,
+      "enabled": true
+    },
+    {
+      "name": "MetaSleuth",
+      "slug": "metasleuth",
+      "category_slug": "crypto",
+      "description": "Kriptoaktivlar harakatini grafik shaklda kuzatish va o'zaro bog'liqliklarni tahlil qilish.",
+      "details": "",
+      "url": "https://metasleuth.io/",
+      "query_url_template": "",
+      "icon": "M",
+      "input_types": [
+        "wallet",
+        "tx-hash"
+      ],
+      "networks": [
+        "Multi-chain"
+      ],
+      "tags": [
+        "Graph",
+        "Tracing"
+      ],
+      "access": "free-tier",
+      "login_required": true,
+      "featured": true,
+      "sort_order": 110,
+      "enabled": true
+    },
+    {
+      "name": "TRONSCAN",
+      "slug": "tronscan",
+      "category_slug": "crypto",
+      "description": "TRON hamyon manzili, token, smart-kontrakt va tranzaksiyaga oid ma'lumotlarni tekshirish.",
+      "details": "",
+      "url": "https://tronscan.org/",
+      "query_url_template": "https://tronscan.org/#/search-result?query={query}",
+      "icon": "T",
+      "input_types": [
+        "wallet",
+        "tx-hash",
+        "contract"
+      ],
+      "networks": [
+        "TRON",
+        "TRC20"
+      ],
+      "tags": [
+        "Explorer",
+        "Token"
+      ],
+      "access": "free",
+      "login_required": false,
+      "featured": true,
+      "sort_order": 130,
+      "enabled": true
+    },
+    {
+      "name": "Telegram ID orqali qidirish",
+      "slug": "telegram-web",
+      "category_slug": "telegram",
+      "description": "Telegram public ID yoki ochiq profil identifikatori bo'yicha mavjud ma'lumotlarni tekshirish.",
+      "details": "",
+      "url": "https://telegram.me/fs_officialtbot?start=010183759D5600000000",
+      "query_url_template": "https://telegram.me/fs_officialtbot?start=010183759D5600000000",
+      "icon": "telegram",
+      "input_types": [
+        "telegram-id"
+      ],
+      "networks": [
+        "Telegram"
+      ],
+      "tags": [
+        "ID"
+      ],
+      "access": "free",
+      "login_required": false,
+      "featured": true,
+      "sort_order": 10,
+      "enabled": true
+    },
+    {
+      "name": "TGStat",
+      "slug": "tgstat",
+      "category_slug": "telegram",
+      "description": "Telegram kanallari statistikasi, postlar va auditoriya dinamikasini tahlil qilish.",
+      "details": "",
+      "url": "https://tgstat.com/",
+      "query_url_template": "",
+      "icon": "TG",
+      "input_types": [
+        "telegram-username",
+        "telegram-channel"
+      ],
+      "networks": [
+        "Telegram"
+      ],
+      "tags": [
+        "Analytics",
+        "Channel"
+      ],
+      "access": "free-tier",
+      "login_required": false,
+      "featured": true,
+      "sort_order": 20,
+      "enabled": true
+    },
+    {
+      "name": "Telegram Username orqali qidirish",
+      "slug": "username-telegram",
+      "category_slug": "telegram",
+      "description": "Telegram username asosida public profilga oid ochiq ma'lumotlarni tekshirish.",
+      "details": "",
+      "url": "https://telegram.me/fs_officialtbot?start=010183759D5600000000",
+      "query_url_template": "https://telegram.me/fs_officialtbot?start=010183759D5600000000",
+      "icon": "telegram",
+      "input_types": [
+        "telegram-username"
+      ],
+      "networks": [
+        "Telegram"
+      ],
+      "tags": [
+        "Username",
+        "Telegram"
+      ],
+      "access": "free",
+      "login_required": false,
+      "featured": true,
+      "sort_order": 30,
+      "enabled": true
+    },
+    {
+      "name": "Lyzem",
+      "slug": "lyzem",
+      "category_slug": "telegram",
+      "description": "Public Telegram xabarlari va kanallariga oid ochiq ma'lumotlarni aniqlash.",
+      "details": "",
+      "url": "https://lyzem.com/",
+      "query_url_template": "",
+      "icon": "L",
+      "input_types": [
+        "telegram-username",
+        "telegram-channel",
+        "keyword"
+      ],
+      "networks": [
+        "Telegram"
+      ],
+      "tags": [
+        "Search",
+        "Messages"
+      ],
+      "access": "free",
+      "login_required": false,
+      "featured": false,
+      "sort_order": 50,
+      "enabled": true
+    },
+    {
+      "name": "Telegram ID orqali telefon raqamni aniqlash",
+      "slug": "telegram-raqam",
+      "category_slug": "telegram",
+      "description": "Telegram orqali taqdim etiladigan tashqi qidiruv xizmatining mavjud public imkoniyatlarini vakolat doirasida tekshirish.",
+      "details": "Tekshiruv doirasida amalga oshiriladigan harakatlar:\n- Telegram orqali taqdim etiladigan tashqi xizmat sahifasini ochish va undagi joriy public qidiruv imkoniyatlarini ko'rib chiqish.\n- Xizmat qaytargan natijadan keyingi tekshiruv yo'nalishlarini belgilash uchun foydalanish.\n- Ahamiyatli natijaning havolasi, ko'rilgan sana-vaqti va tekshiruv kontekstini qayd etish.\n\nNatijadan foydalanish tartibi:\n- Bot operatori, xizmatning joriy funksiyalari va ma'lumot manbalari mustaqil ravishda tasdiqlanmagan; undan faqat tegishli vakolat va qonuniy asos doirasida foydalaniladi.\n- Botga tergov siri, parol, autentifikatsiya kodi, access token, xizmat hujjati yoki oshkor etilishi cheklangan boshqa ma'lumot yuborilmaydi.\n- Olingan natija mustaqil dalil sifatida qabul qilinmaydi; ahamiyatli holatlar rasmiy va kamida bitta mustaqil manba orqali tekshiriladi.",
+      "url": "https://t.me/Kropiva_uabot",
+      "query_url_template": "",
+      "icon": "telegram",
+      "input_types": [
+        "telegram-username",
+        "username",
+        "phone",
+        "email",
+        "keyword"
+      ],
+      "networks": [
+        "Telegram"
+      ],
+      "tags": [
+        "Bot",
+        "Number",
+        "Phone",
+        "ID"
+      ],
+      "access": "free",
+      "login_required": true,
+      "featured": true,
+      "sort_order": 60,
+      "enabled": true
+    },
+    {
+      "name": "TGShield",
+      "slug": "tgshield",
+      "category_slug": "telegram",
+      "description": "TGShield tashqi yo'naltirish sahifasi orqali taqdim etiladigan Telegram tekshiruv xizmatini vakolat doirasida ochish.",
+      "details": "Tekshiruv doirasida amalga oshiriladigan harakatlar:\n- TGShield tashqi yo'naltirish sahifasini ochish va xizmat taqdim etayotgan joriy public tekshiruv imkoniyatlarini ko'rib chiqish.\n- Xizmat qaytargan ochiq natijalardan keyingi tekshiruv yo'nalishini belgilash uchun foydalanish.\n- Yakuniy yo'naltirilgan domen, natija havolasi hamda ko'rilgan sana-vaqtni qayd etish.\n\nNatijadan foydalanish tartibi:\n- Sahifa tashqi manzilga yo'naltirishi mumkin; ma'lumot kiritishdan oldin yakuniy domen va ulanish xavfsizligi alohida tekshiriladi.\n- Xizmat operatori, funksiyalari va ma'lumot manbalari mustaqil ravishda tasdiqlanmagan; parol, autentifikatsiya kodi, access token, tergov siri yoki oshkor etilishi cheklangan ma'lumot kiritilmaydi.\n- Olingan natija mustaqil dalil hisoblanmaydi va rasmiy hamda mustaqil manbalar orqali qiyosiy tekshiriladi.",
+      "url": "https://sherlock1.pro/tgshield/go.php",
+      "query_url_template": "",
+      "icon": "text:TG",
+      "input_types": [
+        "telegram-username",
+        "username",
+        "phone",
+        "email",
+        "keyword"
+      ],
+      "networks": [
+        "Telegram"
+      ],
+      "tags": [
+        "External redirect",
+        "Manual verification"
+      ],
+      "access": "free-tier",
+      "login_required": true,
+      "featured": true,
+      "sort_order": 70,
+      "enabled": true
+    },
+    {
+      "name": "Fun Xeyes Bot",
+      "slug": "fun-xeyes-bot",
+      "category_slug": "telegram",
+      "description": "Telegram botida taqdim etiladigan tashqi qidiruv xizmatining mavjud public imkoniyatlarini vakolat doirasida tekshirish.",
+      "details": "Tekshiruv doirasida amalga oshiriladigan harakatlar:\n- Telegram orqali taqdim etiladigan tashqi bot sahifasini ochish va undagi joriy public qidiruv imkoniyatlarini ko'rib chiqish.\n- Xizmat qaytargan natijadan keyingi tekshiruv yo'nalishlarini belgilash uchun foydalanish.\n- Ahamiyatli natijaning havolasi, ko'rilgan sana-vaqti va tekshiruv kontekstini qayd etish.\n\nNatijadan foydalanish tartibi:\n- Bot operatori, xizmatning joriy funksiyalari va ma'lumot manbalari mustaqil ravishda tasdiqlanmagan; undan faqat tegishli vakolat va qonuniy asos doirasida foydalaniladi.\n- Botga tergov siri, parol, autentifikatsiya kodi, access token, xizmat hujjati yoki oshkor etilishi cheklangan boshqa ma'lumot yuborilmaydi.\n- Olingan natija mustaqil dalil sifatida qabul qilinmaydi; ahamiyatli holatlar rasmiy va kamida bitta mustaqil manba orqali tekshiriladi.",
+      "url": "https://telegram.me/fun_xeyes_bot?start=010183759D5600000000",
+      "query_url_template": "",
+      "icon": "telegram",
+      "input_types": [
+        "telegram-username",
+        "username",
+        "phone",
+        "email",
+        "keyword"
+      ],
+      "networks": [
+        "Telegram"
+      ],
+      "tags": [
+        "Bot",
+        "External service",
+        "Manual verification"
+      ],
+      "access": "free-tier",
+      "login_required": true,
+      "featured": true,
+      "sort_order": 80,
+      "enabled": true
+    },
+    {
+      "name": "Instant Username Search",
+      "slug": "instant-username",
+      "category_slug": "username",
+      "description": "Username bir nechta public platformada ro'yxatdan o'tkazilgan yoki foydalanish uchun mavjud ekanini dastlabki tekshirish.",
+      "details": "Tekshiruv doirasida amalga oshiriladigan harakatlar:\n- Username bir nechta public platformada ishlatilayotgan yoki foydalanish uchun mavjud ekanini dastlabki tekshirish.\n- Aniqlangan platforma va ehtimoliy profil havolalarini keyingi manzilli tekshiruv uchun qayd etish.\n- Bir xil username bo'yicha topilgan profillardagi public identifikatorlarni o'zaro qiyoslash.\n\nNatijadan foydalanish tartibi:\n- “Band”, “mavjud” yoki “noma'lum” holati profilning muayyan shaxsga tegishli ekanini tasdiqlamaydi; har bir natija tegishli platformaning o'zida qayta tekshiriladi.\n- Xizmat natijasi vaqtinchalik keshga bog'liq yoki platformadagi keyingi o'zgarishlardan ortda qolgan bo'lishi mumkin.\n- Shaxs aynanligi kamida bitta qo'shimcha identifikator va mustaqil manba bilan tasdiqlanadi; so'rov, sana-vaqt va natija havolasi qayd etiladi.",
+      "url": "https://instantusername.com/",
+      "query_url_template": "https://instantusername.com/?q={query}",
+      "icon": "auto",
+      "input_types": [
+        "username",
+        "telegram-username"
+      ],
+      "networks": [
+        "Social media"
+      ],
+      "tags": [
+        "Accounts",
+        "Availability"
+      ],
+      "access": "free",
+      "login_required": false,
+      "featured": true,
+      "sort_order": 10,
+      "enabled": true
+    },
+    {
+      "name": "Fingerprint.to",
+      "slug": "fingerprint-to",
+      "category_slug": "username",
+      "description": "Username, email manzil yoki telefon raqami bo'yicha ochiq platformalardagi ehtimoliy mosliklarni qidirish.",
+      "details": "Tekshiruv doirasida amalga oshiriladigan harakatlar:\n- Username, email manzil yoki telefon raqami bo'yicha public platformalardagi ehtimoliy mosliklarni qidirish.\n- Aniqlangan profil havolalari, nom va boshqa ochiq belgilarni o'zaro qiyoslash.\n- Mosliklardan keyingi tekshiruv yo'nalishlari sifatida foydalanish.\n\nNatijadan foydalanish tartibi:\n- Bir xil username yoki aloqa identifikatori profillarning aynan bir shaxsga tegishli ekanligini o'z-o'zidan tasdiqlamaydi.\n- Har bir moslik kamida bitta qo'shimcha identifikator va mustaqil manba orqali tekshiriladi; xizmat shartlari hamda shaxsga doir ma'lumotlarni himoya qilish talablari saqlanadi.",
+      "url": "https://fingerprint.to/demo",
+      "query_url_template": "",
+      "icon": "auto",
+      "input_types": [
+        "name",
+        "username",
+        "email",
+        "phone"
+      ],
+      "networks": [
+        "Social media"
+      ],
+      "tags": [
+        "Identity",
+        "Accounts"
+      ],
+      "access": "free-tier",
+      "login_required": false,
+      "featured": true,
+      "sort_order": 80,
+      "enabled": true
+    },
+    {
+      "name": "IDCrawl",
+      "slug": "idcrawl",
+      "category_slug": "username",
+      "description": "Shaxs nomi, username, email manzil yoki telefon raqami bo'yicha ochiq profil va ma'lumotlarni qidirish.",
+      "details": "Tekshiruv doirasida amalga oshiriladigan harakatlar:\n- Shaxs nomi, username, email manzil yoki telefon raqami bo'yicha public profil va yozuvlarni qidirish.\n- Ehtimoliy bog'liq ijtimoiy tarmoq profillari va aloqa ma'lumotlarini qiyoslash.\n- Aniqlangan havolalarni keyingi manzilli tekshiruv uchun qayd etish.\n\nNatijadan foydalanish tartibi:\n- Natijalar shaxsning aynanligini yoki ma'lumotning dolzarbligini mustaqil ravishda tasdiqlamaydi.\n- Xizmat natijalaridan kredit, ishga qabul qilish, sug'urta, uy-joy yoki qonun bilan alohida tartibga solingan qarorlar uchun foydalanilmaydi; ahamiyatli ma'lumotlar mustaqil manbalar orqali tekshiriladi.",
+      "url": "https://www.idcrawl.com/",
+      "query_url_template": "",
+      "icon": "auto",
+      "input_types": [
+        "name",
+        "username",
+        "email",
+        "phone"
+      ],
+      "networks": [
+        "Social media",
+        "Web"
+      ],
+      "tags": [
+        "People search",
+        "Accounts"
+      ],
+      "access": "free",
+      "login_required": false,
+      "featured": true,
+      "sort_order": 90,
+      "enabled": true
+    },
+    {
+      "name": "Google Search",
+      "slug": "google-search",
+      "category_slug": "search",
+      "description": "Shaxs nomi, username va boshqa indikatorlar bo'yicha Google indeksidagi ochiq veb-manbalarni qidirish.",
+      "details": "Tekshiruv doirasida amalga oshiriladigan harakatlar:\n- Shaxs nomi, username, telefon raqami, email, IP manzil, domen, URL yoki kalit so'z bo'yicha Google indeksidagi ochiq sahifalarni qidirish.\n- Qidiruv operatorlari yordamida natijalarni aniq ibora, muayyan domen yoki fayl turi bo'yicha aniqlashtirish.\n- Ahamiyatli natijaning sarlavhasi, URL manzili va ko'rish sanasini qayd etish.\n\nNatijadan foydalanish tartibi:\n- Qidiruv natijasi tekshiruv uchun yo'naltiruvchi ma'lumot hisoblanadi va undagi holatlar asl manbada tekshiriladi.\n- Ism, username yoki boshqa belgi mosligi qo'shimcha identifikatorlarsiz shaxs aynanligini tasdiqlamaydi.",
+      "url": "https://www.google.com/",
+      "query_url_template": "https://www.google.com/search?q={query}",
+      "icon": "google",
+      "input_types": [
+        "name",
+        "username",
+        "telegram-username",
+        "email",
+        "phone",
+        "ip",
+        "asn",
+        "domain",
+        "url",
+        "wallet",
+        "tx-hash",
+        "file-hash",
+        "keyword"
+      ],
+      "networks": [
+        "Web"
+      ],
+      "tags": [
+        "Search",
+        "Indexed data"
+      ],
+      "access": "free",
+      "login_required": false,
+      "featured": true,
+      "sort_order": 10,
+      "enabled": true
+    },
+    {
+      "name": "Yandex Search",
+      "slug": "yandex-search",
+      "category_slug": "search",
+      "description": "Shaxs nomi, username va boshqa indikatorlar bo'yicha Yandex indeksidagi ochiq veb-manbalarni qidirish.",
+      "details": "Tekshiruv doirasida amalga oshiriladigan harakatlar:\n- Shaxs nomi, username, telefon raqami, email, IP manzil, domen, URL yoki kalit so'z bo'yicha Yandex indeksidagi ochiq sahifalarni qidirish.\n- Turli yozilish shakllari va qidiruv operatorlari orqali muqobil manbalarni aniqlash.\n- Ahamiyatli natijaning sarlavhasi, URL manzili va ko'rish sanasini qayd etish.\n\nNatijadan foydalanish tartibi:\n- Qidiruv natijasi tekshiruv uchun yo'naltiruvchi ma'lumot hisoblanadi va undagi holatlar asl manbada tekshiriladi.\n- Ism, username yoki boshqa belgi mosligi qo'shimcha identifikatorlarsiz shaxs aynanligini tasdiqlamaydi.",
+      "url": "https://yandex.ru/",
+      "query_url_template": "https://yandex.ru/search/?text={query}",
+      "icon": "auto",
+      "input_types": [
+        "name",
+        "username",
+        "telegram-username",
+        "email",
+        "phone",
+        "ip",
+        "asn",
+        "domain",
+        "url",
+        "wallet",
+        "tx-hash",
+        "file-hash",
+        "keyword"
+      ],
+      "networks": [
+        "Web"
+      ],
+      "tags": [
+        "Search",
+        "Indexed data"
+      ],
+      "access": "free",
+      "login_required": false,
+      "featured": true,
+      "sort_order": 20,
+      "enabled": true
+    },
+    {
+      "name": "Microsoft Bing",
+      "slug": "bing",
+      "category_slug": "search",
+      "description": "Shaxs nomi, username va boshqa indikatorlar bo'yicha Microsoft Bing indeksidagi ochiq veb-manbalarni qidirish.",
+      "details": "Tekshiruv doirasida amalga oshiriladigan harakatlar:\n- Shaxs nomi, username, telefon raqami, email, domen yoki URL bo'yicha indekslangan ochiq sahifalarni qidirish.\n- Microsoft Bing qidiruv operatorlari yordamida hujjat, rasm, yangilik va muayyan domen doirasidagi natijalarni aniqlashtirish.\n- Ahamiyatli natijaning sarlavhasi, URL manzili va ko'rish sanasini qayd etish.\n\nNatijadan foydalanish tartibi:\n- Qidiruv natijasi tekshiruv uchun yo'naltiruvchi ma'lumot hisoblanadi va undagi holatlar asl manbada tekshiriladi.\n- Shaxslar o'rtasidagi o'xshashlik yoki ism mosligi qo'shimcha identifikatorlarsiz aynanlikni tasdiqlamaydi.",
+      "url": "https://www.bing.com/",
+      "query_url_template": "https://www.bing.com/search?q={query}",
+      "icon": "auto",
+      "input_types": [
+        "name",
+        "username",
+        "telegram-username",
+        "email",
+        "phone",
+        "ip",
+        "asn",
+        "domain",
+        "url",
+        "wallet",
+        "tx-hash",
+        "file-hash",
+        "keyword"
+      ],
+      "networks": [
+        "Web"
+      ],
+      "tags": [
+        "Search",
+        "Indexed data"
+      ],
+      "access": "free",
+      "login_required": false,
+      "featured": true,
+      "sort_order": 30,
+      "enabled": true
+    },
+    {
+      "name": "2GIS",
+      "slug": "2gis",
+      "category_slug": "search",
+      "description": "Manzil, tashkilot nomi yoki telefon raqami bo'yicha ochiq xarita va tashkilot ma'lumotlarini tekshirish.",
+      "details": "Tekshiruv doirasida amalga oshiriladigan harakatlar:\n- Manzil, tashkilot nomi yoki telefon raqami bo'yicha ochiq tashkilot kartochkalari va xarita ma'lumotlarini qidirish.\n- Tashkilot manzili, aloqa rekvizitlari, ish vaqti va ochiq e'lon qilingan filiallarni tekshirish.\n- Joylashuvni boshqa rasmiy va mustaqil manbalar bilan qiyosiy tekshirish.\n\nNatijadan foydalanish tartibi:\n- Xarita va katalog ma'lumotlarining yangilangan sanasi hamda ehtimoliy foydalanuvchi tahrirlari inobatga olinadi.\n- Natija tashkilotning rasmiy manbasi va zarur hollarda joyida tekshiruv bilan tasdiqlanadi.",
+      "url": "https://2gis.uz/",
+      "query_url_template": "https://2gis.uz/tashkent/search/{query}",
+      "icon": "auto",
+      "input_types": [
+        "address",
+        "name",
+        "phone",
+        "keyword"
+      ],
+      "networks": [
+        "Uzbekistan",
+        "Map"
+      ],
+      "tags": [
+        "Places",
+        "Organizations"
+      ],
+      "access": "free",
+      "login_required": false,
+      "featured": true,
+      "sort_order": 40,
+      "enabled": true
+    },
+    {
+      "name": "crt.sh",
+      "slug": "crtsh",
+      "category_slug": "network",
+      "description": "Certificate Transparency jurnallari orqali domen va subdomenlarni aniqlash.",
+      "details": "",
+      "url": "https://crt.sh/",
+      "query_url_template": "https://crt.sh/?q={query}",
+      "icon": "crt",
+      "input_types": [
+        "domain",
+        "certificate"
+      ],
+      "networks": [
+        "TLS"
+      ],
+      "tags": [
+        "Certificates",
+        "Subdomains"
+      ],
+      "access": "free",
+      "login_required": false,
+      "featured": true,
+      "sort_order": 60,
+      "enabled": true
+    },
+    {
+      "name": "DNSDumpster",
+      "slug": "dnsdumpster",
+      "category_slug": "network",
+      "description": "DNS yozuvlari va domen infratuzilmasi xaritasiga oid ma'lumotlarni tekshirish.",
+      "details": "Tekshiruv doirasida amalga oshiriladigan harakatlar:\n- Domen bilan bog'liq public DNS yozuvlari va hostlarni aniqlash.\n- Subdomenlar, pochta xizmatlari va ehtimoliy tarmoq infratuzilmasi o'rtasidagi aloqalarni xaritalash.\n- Aniqlangan IP manzil va hostlarni boshqa mustaqil texnik manbalar orqali qiyosiy tekshirish.\n\nNatijadan foydalanish tartibi:\n- Natijalar passiv DNS va ochiq manbalarga asoslanishi sababli ularning dolzarbligi alohida tekshiriladi.\n- Tekshiruv sanasi, domen va aniqlangan yozuvlar manba havolasi bilan qayd etiladi.",
+      "url": "https://dnsdumpster.com/",
+      "query_url_template": "",
+      "icon": "DNS",
+      "input_types": [
+        "domain"
+      ],
+      "networks": [
+        "DNS"
+      ],
+      "tags": [
+        "Mapping",
+        "Records"
+      ],
+      "access": "free",
+      "login_required": false,
+      "featured": false,
+      "sort_order": 70,
+      "enabled": true
+    },
+    {
+      "name": "WHOIS",
+      "slug": "whois",
+      "category_slug": "network",
+      "description": "Domenning ro'yxatdan o'tkazilishiga oid ochiq WHOIS ma'lumotlarini tekshirish.",
+      "details": "",
+      "url": "https://who.is/",
+      "query_url_template": "https://who.is/whois/{query}",
+      "icon": "W",
+      "input_types": [
+        "domain",
+        "ip"
+      ],
+      "networks": [
+        "Internet"
+      ],
+      "tags": [
+        "Registration",
+        "Ownership"
+      ],
+      "access": "free",
+      "login_required": false,
+      "featured": false,
+      "sort_order": 80,
+      "enabled": true
+    },
+    {
+      "name": "Wayback Machine",
+      "slug": "wayback-machine",
+      "category_slug": "network",
+      "description": "Domen yoki URLning arxivlangan tarixiy nusxalarini aniqlash va o'zgarishlarni qiyosiy tekshirish.",
+      "details": "Tekshiruv doirasida amalga oshiriladigan harakatlar:\n- Domen yoki URL bo'yicha arxivlangan veb-sahifa nusxalarini aniqlash.\n- Sahifa mazmuni, aloqa rekvizitlari va tashqi havolalardagi tarixiy o'zgarishlarni qiyoslash.\n- Tekshiruv uchun ahamiyatli nusxaning arxiv URL manzili va qayd etilgan sanasini rasmiylashtirish.\n\nNatijadan foydalanish tartibi:\n- Arxiv nusxasi mustaqil tasdiq sifatida emas, tekshiruv versiyasini shakllantiruvchi ochiq manba sifatida baholanadi.\n- Muhim holatlar boshqa mustaqil manbalar bilan qiyosiy tekshiriladi va ko'rish sanasi qayd etiladi.",
+      "url": "https://web.archive.org/",
+      "query_url_template": "https://web.archive.org/web/*/{query}",
+      "icon": "auto",
+      "input_types": [
+        "url",
+        "domain"
+      ],
+      "networks": [
+        "Web"
+      ],
+      "tags": [
+        "Archive",
+        "History"
+      ],
+      "access": "free",
+      "login_required": false,
+      "featured": true,
+      "sort_order": 110,
+      "enabled": true
+    },
+    {
+      "name": ".UZ domen ma'muriyati",
+      "slug": "cctld-uz",
+      "category_slug": "network",
+      "description": ".UZ domen nomining mavjudligi va public ro'yxatga olish holatiga oid ma'lumotlarni tekshirish.",
+      "details": "Tekshiruv doirasida amalga oshiriladigan harakatlar:\n- .UZ domen nomining mavjudligi va public ro'yxatga olish holatini tekshirish.\n- Domen nomi, ro'yxatga olish xizmati hamda ochiq e'lon qilingan tegishli rekvizitlarni qayd etish.\n- O'zbekiston milliy domen hududiga aloqador keyingi tekshiruv yo'nalishlarini belgilash.\n\nNatijadan foydalanish tartibi:\n- Xizmat test rejimida ishlashi mumkinligi inobatga olinadi.\n- Faqat public ma'lumotlardan foydalaniladi; domen nomi muayyan shaxsga tegishli ekanligi qo'shimcha dalillarsiz tasdiqlangan deb hisoblanmaydi.",
+      "url": "https://new.cctld.uz/",
+      "query_url_template": "",
+      "icon": "auto",
+      "input_types": [
+        "domain"
+      ],
+      "networks": [
+        "DNS",
+        ".UZ"
+      ],
+      "tags": [
+        "Registration",
+        "Uzbekistan"
+      ],
+      "access": "free",
+      "login_required": false,
+      "featured": true,
+      "sort_order": 120,
+      "enabled": true
+    },
+    {
+      "name": "ICANN Lookup",
+      "slug": "icann-lookup",
+      "category_slug": "network",
+      "description": "Domen yoki IP resursiga oid public ro'yxatga olish ma'lumotlarini RDAP orqali tekshirish.",
+      "details": "Tekshiruv doirasida amalga oshiriladigan harakatlar:\n- Domen yoki internet raqam resursiga oid public ro'yxatga olish ma'lumotlarini RDAP orqali tekshirish.\n- Registrar, registry, domen holati, nameserver va DNSSEC haqidagi mavjud yozuvlarni qayd etish.\n- Ro'yxatga olish voqealari va vakolatli xizmatga oid havolalarni qiyosiy tekshirish.\n\nNatijadan foydalanish tartibi:\n- Maxfiylik sababli yashirilgan maydonlar mavjud bo'lishi mumkin.\n- Ro'yxatga olish yozuvi domen foydalanuvchisining shaxsini mustaqil ravishda tasdiqlamaydi; natija boshqa dalillar bilan tekshiriladi.",
+      "url": "https://lookup.icann.org/",
+      "query_url_template": "https://lookup.icann.org/en/lookup?name={query}",
+      "icon": "auto",
+      "input_types": [
+        "domain",
+        "ip"
+      ],
+      "networks": [
+        "Internet",
+        "RDAP"
+      ],
+      "tags": [
+        "Registration",
+        "Registry"
+      ],
+      "access": "free",
+      "login_required": false,
+      "featured": true,
+      "sort_order": 130,
+      "enabled": true
+    },
+    {
+      "name": "RDAP.org",
+      "slug": "rdap",
+      "category_slug": "network",
+      "description": "Domen, IP manzil yoki ASN bo'yicha tuzilmaviy public ro'yxatga olish ma'lumotlarini olish.",
+      "details": "Tekshiruv doirasida amalga oshiriladigan harakatlar:\n- Domen, IP manzil yoki ASN bo'yicha tuzilmaviy RDAP ma'lumotlarini olish.\n- Vakolatli registry, holat, hodisa sanalari, nameserver, tarmoq diapazoni va tegishli bildirishnomalarni tekshirish.\n- Natijadagi havola va identifikatorlar asosida keyingi tekshiruv yo'nalishlarini belgilash.\n\nNatijadan foydalanish tartibi:\n- RDAP.org so'rovni tegishli vakolatli RDAP xizmatiga yo'naltirishi mumkin.\n- Aniqlangan texnik resurs muayyan shaxsga tegishli ekanligi qo'shimcha dalillarsiz tasdiqlangan deb baholanmaydi.",
+      "url": "https://about.rdap.org/",
+      "query_url_template": "https://rdap.org/domain/{query}",
+      "icon": "auto",
+      "input_types": [
+        "domain",
+        "ip",
+        "asn"
+      ],
+      "networks": [
+        "Internet",
+        "RDAP"
+      ],
+      "tags": [
+        "Registration",
+        "Structured data"
+      ],
+      "access": "free",
+      "login_required": false,
+      "featured": true,
+      "sort_order": 140,
+      "enabled": true
+    },
+    {
+      "name": "MobSF Live",
+      "slug": "mobsf-live",
+      "category_slug": "mobile-threats",
+      "description": "APK yoki AAB faylining kodi, manifesti, ruxsatlari, sertifikati va ehtimoliy zararli belgilarini dastlabki tahlil qilish.",
+      "details": "Tekshiruv doirasida amalga oshiriladigan harakatlar:\n- APK yoki AAB faylining manifesti, so'ralgan ruxsatlari, komponentlari, sertifikati, kodi va resurslarini statik tahlil qilish.\n- Ehtimoliy zararli API chaqiruvlari, qattiq kodlangan kalitlar, zaif sozlamalar, kuzatuv kutubxonalari va tarmoq manzillarini aniqlash.\n- Qo'llab-quvvatlanadigan muhitda dinamik tahlil natijalari orqali ilovaning tarmoq va xulq-atvor belgilarini tekshirish.\n\nNatijadan foydalanish tartibi:\n- Asl faylning hash qiymati, olingan manbasi, tahlil sanasi, MobSF hisobot identifikatori va ahamiyatli topilmalar qayd etiladi.\n- Public MobSF nusxasiga tergov siri yoki oshkor etilishi cheklangan fayl yuborilmaydi; bunday material alohida va nazorat qilinadigan MobSF muhitida tekshiriladi.\n- Avtomatik topilma yakuniy ekspert xulosasi hisoblanmaydi va zarur hollarda boshqa vosita hamda qo'lda kod tahlili bilan tasdiqlanadi.",
+      "url": "https://mobsf.live/",
+      "query_url_template": "",
+      "icon": "auto",
+      "input_types": [
+        "apk",
+        "aab",
+        "file",
+        "file-hash"
+      ],
+      "networks": [
+        "Android",
+        "iOS"
+      ],
+      "tags": [
+        "Static analysis",
+        "Dynamic analysis"
+      ],
+      "access": "free",
+      "login_required": false,
+      "featured": true,
+      "sort_order": 10,
+      "enabled": true
+    },
+    {
+      "name": "Koodous",
+      "slug": "koodous",
+      "category_slug": "mobile-threats",
+      "description": "APK, paket nomi yoki hash bo'yicha Android ilovalari reputatsiyasi va mavjud tahlil ma'lumotlarini tekshirish.",
+      "details": "Tekshiruv doirasida amalga oshiriladigan harakatlar:\n- APK fayli hashi, paket nomi yoki boshqa identifikator bo'yicha Koodous bazasidagi mavjud yozuv va tahlil natijalarini qidirish.\n- Ilova versiyasi, sertifikat, ruxsatlar, aniqlangan xatti-harakatlar va hamjamiyat reputatsiyasiga oid ochiq belgilarni qiyoslash.\n- Bir paket yoki sertifikatga bog'liq boshqa APK namunalarini keyingi tekshiruv yo'nalishi sifatida aniqlash.\n\nNatijadan foydalanish tartibi:\n- Hash, paket nomi, tekshiruv URL manzili, sana-vaqt va ahamiyatli natijalar qayd etiladi.\n- Maxfiy faylni public xizmatga yuklash o'rniga avval hash va mavjud hisobot bo'yicha qidirish tavsiya etiladi.\n- Reputatsiya belgisi yoki avtomatik tasnif mustaqil dalil hisoblanmaydi; natija boshqa manba va nazorat qilinadigan tahlil bilan tekshiriladi.",
+      "url": "https://koodous.com/",
+      "query_url_template": "",
+      "icon": "auto",
+      "input_types": [
+        "apk",
+        "file",
+        "file-hash",
+        "package"
+      ],
+      "networks": [
+        "Android"
+      ],
+      "tags": [
+        "APK repository",
+        "Malware research"
+      ],
+      "access": "free-tier",
+      "login_required": true,
+      "featured": true,
+      "sort_order": 20,
+      "enabled": true
+    },
+    {
+      "name": "VirusTotal URL",
+      "slug": "virustotal-url",
+      "category_slug": "mobile-threats",
+      "description": "URL, domen va IP reputatsiyasini bir nechta xavfsizlik manbasi orqali tekshirish.",
+      "details": "Tekshiruv doirasida amalga oshiriladigan harakatlar:\n- URL, domen yoki IP bo'yicha mavjud antivirus, reputatsiya va threat-intelligence natijalarini qiyoslash.\n- Aniqlashlar tarixi, bog'langan resurslar va xavfsizlik yetkazib beruvchilari qaytargan baholarni ko'rib chiqish.\n- Tekshiruv uchun ahamiyatli indikatorlarni keyingi mustaqil tahlilga ajratish.\n\nNatijadan foydalanish tartibi:\n- So'rov qiymati, natija URL manzili, tekshiruv sanasi va muhim aniqlashlar qayd etiladi.\n- Yangi URL yoki faylni public xizmatga yuborish natijani xizmat hamjamiyati va hamkorlari bilan ulashishi mumkin; tergov siri yoki oshkor etilishi cheklangan indikator vakolatsiz yuborilmaydi.\n- Bir yoki bir nechta dvigatel aniqlashi yakuniy xulosa emas; natija kontekst va mustaqil manbalar bilan tekshiriladi.",
+      "url": "https://www.virustotal.com/gui/home/url",
+      "query_url_template": "https://www.virustotal.com/gui/search/{query}",
+      "icon": "VT",
+      "input_types": [
+        "url",
+        "domain",
+        "ip",
+        "file-hash"
+      ],
+      "networks": [
+        "Internet"
+      ],
+      "tags": [
+        "Reputation",
+        "Threat intelligence"
+      ],
+      "access": "free-tier",
+      "login_required": false,
+      "featured": true,
+      "sort_order": 30,
+      "enabled": true
+    },
+    {
+      "name": "urlscan.io",
+      "slug": "urlscan",
+      "category_slug": "mobile-threats",
+      "description": "Shubhali veb-sahifa, yo'naltirishlar, sahifa tasviri va tarmoq so'rovlarini tahlil qilish.",
+      "details": "Tekshiruv doirasida amalga oshiriladigan harakatlar:\n- URL, domen yoki IP bo'yicha avvalgi public skan natijalarini qidirish.\n- Sahifa tasviri, tarmoq so'rovlari, HTTP javoblari, domenlar va IP aloqalarini tahlil qilish.\n- Sertifikat, yo'naltirish va yuklangan resurslar asosida bog'liq infratuzilmani aniqlash.\n\nNatijadan foydalanish tartibi:\n- Maxfiy yoki xizmatga oid URLni public skanga yuborishdan oldin ma'lumotning oshkor bo'lish xavfi baholanadi.\n- Natija URL manzili, skan sanasi va ahamiyatli texnik ko'rsatkichlar qayd etiladi.",
+      "url": "https://urlscan.io/",
+      "query_url_template": "https://urlscan.io/search/#page.domain:{query}",
+      "icon": "u",
+      "input_types": [
+        "url",
+        "domain",
+        "ip"
+      ],
+      "networks": [
+        "Web"
+      ],
+      "tags": [
+        "Screenshot",
+        "Network requests"
+      ],
+      "access": "free-tier",
+      "login_required": false,
+      "featured": true,
+      "sort_order": 40,
+      "enabled": true
+    },
+    {
+      "name": "VirusTotal Files",
+      "slug": "virustotal-files",
+      "category_slug": "mobile-threats",
+      "description": "Fayl yoki hash qiymatini antivirus va threat-intelligence manbalari orqali tekshirish.",
+      "details": "Tekshiruv doirasida amalga oshiriladigan harakatlar:\n- APK yoki boshqa faylning hash qiymati bo'yicha mavjud antivirus va threat-intelligence hisobotlarini qidirish.\n- Zarur va vakolatli holatda faylni skanerlash, aniqlashlar, fayl turi, imzo, xatti-harakat va bog'liq indikatorlarni ko'rib chiqish.\n- Muhim domen, URL, IP, sertifikat yoki hashlarni keyingi tekshiruv uchun ajratish.\n\nNatijadan foydalanish tartibi:\n- Asl fayl hashi, manbasi, hisobot URL manzili, tahlil sanasi va ahamiyatli natijalar qayd etiladi.\n- Public xizmatga yuborilgan fayl xizmat hamjamiyati va hamkorlari bilan ulashilishi mumkin; maxfiy yoki oshkor etilishi cheklangan material vakolatsiz yuklanmaydi.\n- Antivirus aniqlashlari yakuniy ekspert xulosasi hisoblanmaydi va boshqa vosita hamda nazorat qilinadigan muhitdagi tahlil bilan tekshiriladi.",
+      "url": "https://www.virustotal.com/gui/home/upload",
+      "query_url_template": "https://www.virustotal.com/gui/search/{query}",
+      "icon": "VT",
+      "input_types": [
+        "apk",
+        "file",
+        "file-hash"
+      ],
+      "networks": [
+        "Files",
+        "Android"
+      ],
+      "tags": [
+        "Malware",
+        "Reputation"
+      ],
+      "access": "free-tier",
+      "login_required": false,
+      "featured": true,
+      "sort_order": 50,
+      "enabled": true
+    },
+    {
+      "name": "Google Lens",
+      "slug": "google-lens",
+      "category_slug": "media",
+      "description": "Rasmga o'xshash tasvirlar va ehtimoliy dastlabki manbalarni aniqlash.",
+      "details": "",
+      "url": "https://lens.google.com/",
+      "query_url_template": "",
+      "icon": "G",
+      "input_types": [
+        "image"
+      ],
+      "networks": [
+        "Images"
+      ],
+      "tags": [
+        "Reverse search",
+        "Visual"
+      ],
+      "access": "free",
+      "login_required": false,
+      "featured": true,
+      "sort_order": 10,
+      "enabled": true
+    },
+    {
+      "name": "Yandex Images",
+      "slug": "yandex-images",
+      "category_slug": "media",
+      "description": "Reverse image search yordamida o'xshash tasvirlar va ehtimoliy manbalarni aniqlash.",
+      "details": "",
+      "url": "https://yandex.com/images/",
+      "query_url_template": "",
+      "icon": "Y",
+      "input_types": [
+        "image"
+      ],
+      "networks": [
+        "Images"
+      ],
+      "tags": [
+        "Reverse search",
+        "Visual"
+      ],
+      "access": "free",
+      "login_required": false,
+      "featured": true,
+      "sort_order": 20,
+      "enabled": true
+    },
+    {
+      "name": "EXIF.tools",
+      "slug": "exif-tools",
+      "category_slug": "media",
+      "description": "Rasm va fayllardagi EXIF hamda boshqa metadata ma'lumotlarini tekshirish.",
+      "details": "",
+      "url": "https://exif.tools/",
+      "query_url_template": "",
+      "icon": "EX",
+      "input_types": [
+        "image",
+        "file"
+      ],
+      "networks": [
+        "Metadata"
+      ],
+      "tags": [
+        "EXIF",
+        "File"
+      ],
+      "access": "free",
+      "login_required": false,
+      "featured": true,
+      "sort_order": 40,
+      "enabled": true
+    },
+    {
+      "name": "FotoForensics",
+      "slug": "fotoforensics",
+      "category_slug": "media",
+      "description": "Rasm qatlamlari, siqilish farqlari va ehtimoliy tahrir belgilarini dastlabki tahlil qilish.",
+      "details": "",
+      "url": "https://fotoforensics.com/",
+      "query_url_template": "",
+      "icon": "FF",
+      "input_types": [
+        "image"
+      ],
+      "networks": [
+        "Images"
+      ],
+      "tags": [
+        "ELA",
+        "Forensics"
+      ],
+      "access": "free",
+      "login_required": false,
+      "featured": true,
+      "sort_order": 50,
+      "enabled": true
+    }
+  ]
+}

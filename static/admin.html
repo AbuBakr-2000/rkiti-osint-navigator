@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="color-scheme" content="light dark">
+  <title>OSINT katalogini boshqarish</title>
+  <script>(()=>{const saved=localStorage.getItem("osint-theme");document.documentElement.dataset.theme=saved||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");})();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="/static/admin.css?v=20260914-2">
+  <script src="/static/i18n.js?v=20260914-2" defer></script>
+  <script src="/static/icon-system.js?v=20260911-2" defer></script>
+  <script src="/static/ui-icons.js?v=20260911-2" defer></script>
+  <script src="/static/admin.js?v=20260914-2" defer></script>
+</head>
+<body>
+  <main>
+    <section id="login-view" class="login-view hidden">
+      <button class="theme-toggle login-theme-toggle icon-button" type="button" data-theme-action aria-label="Tantanali moviy rang rejimini yoqish"><span class="theme-moon" data-ui-icon="moon"></span><span class="theme-sun" data-ui-icon="sun"></span></button>
+      <div class="login-shell">
+        <a class="back-link" href="/"><span data-ui-icon="arrowLeft"></span> Saytga qaytish</a>
+        <form id="login-form" class="login-card">
+          <div class="login-brand"><img src="/static/institute-logo.png" alt=""><div><strong>Raqamli kriminalistika<br>ilmiy-tadqiqot instituti</strong><span data-no-transliterate>OSINT</span></div></div>
+          <div class="login-heading"><p class="section-badge">Boshqaruv paneli</p><h1>Administrator sifatida tizimga kiring</h1><p class="login-copy">Katalog va mutaxassis murojaatlarini xavfsiz boshqaring.</p></div>
+          <label>Login<input name="username" autocomplete="username" value="admin" required></label>
+          <label>Parol<input name="password" type="password" autocomplete="current-password" required></label>
+          <button class="primary-button full-button" type="submit">Kirish</button>
+          <div id="login-error" class="form-error hidden"></div>
+        </form>
+      </div>
+    </section>
+
+    <section id="dashboard-view" class="dashboard hidden">
+      <aside>
+        <div class="aside-head"><a class="aside-brand" href="/"><img src="/static/institute-logo.png" alt=""><span><b data-no-transliterate>OSINT</b><small>Boshqaruv paneli</small></span></a></div>
+        <nav>
+          <button class="nav-button" data-panel="requests"><span class="nav-label"><i data-ui-icon="inbox"></i>Murojaatlar</span><b id="nav-request-count">0</b></button>
+          <button class="nav-button active" data-panel="tools"><span class="nav-label"><i data-ui-icon="wrench"></i>Vositalar</span><b id="nav-tool-count">0</b></button>
+          <button class="nav-button" data-panel="categories"><span class="nav-label"><i data-ui-icon="layers"></i>Tekshiruv yo'nalishlari</span><b id="nav-category-count">0</b></button>
+          <button class="nav-button" data-panel="bot-users"><span class="nav-label"><i data-ui-icon="users"></i>Bot foydalanuvchilari</span><b id="nav-user-count">0</b></button>
+        </nav>
+        <div class="aside-bottom"><a href="/" target="_blank"><span data-ui-icon="external"></span> Saytni ko'rish</a><button id="logout-button"><span data-ui-icon="logout"></span> Chiqish</button></div>
+      </aside>
+
+      <div class="dashboard-workspace">
+        <div class="admin-topbar"><p>Raqamli kriminalistika ilmiy-tadqiqot instituti <span data-no-transliterate>/ OSINT</span></p><div class="admin-controls dashboard-controls"><button class="language-toggle" type="button" data-language-toggle aria-label="Yozuvni almashtirish">UZ / ЎЗ</button><button class="theme-toggle icon-button" type="button" data-theme-action aria-label="Tantanali moviy rang rejimini yoqish"><span class="theme-moon" data-ui-icon="moon"></span><span class="theme-sun" data-ui-icon="sun"></span></button></div></div>
+        <div class="dashboard-main">
+          <header><div><h1 id="dashboard-title">OSINT vositalari</h1><p id="dashboard-description">Yangi vosita kiriting yoki mavjud yozuvni tahrirlang.</p></div><div class="dashboard-header-actions"><button id="export-catalog-button" class="secondary-button compact-button" type="button"><span data-ui-icon="download"></span> JSON eksport</button><button id="import-catalog-button" class="secondary-button compact-button" type="button"><span data-ui-icon="upload"></span> JSON import</button><input id="import-catalog-input" class="hidden" type="file" accept="application/json,.json"><button id="new-item-button" class="primary-button" type="button"><span data-ui-icon="plus"></span> Yangi vosita</button></div></header>
+
+          <section id="tools-panel" class="content-panel"><div class="toolbar"><label class="search-field"><span data-ui-icon="search"></span><input id="tool-search" type="search" placeholder="OSINT vositasi nomi bo'yicha qidirish"></label><select id="category-filter"><option value="">Barcha tekshiruv yo'nalishlari</option></select></div><div id="tool-list" class="record-list"></div></section>
+          <section id="categories-panel" class="content-panel hidden"><div id="category-list" class="record-list"></div></section>
+          <section id="requests-panel" class="content-panel hidden"><div class="toolbar request-toolbar"><label class="search-field"><span data-ui-icon="search"></span><input id="request-search" type="search" placeholder="Murojaat raqami yoki foydalanuvchi bo'yicha qidirish"></label><select id="request-status-filter"><option value="">Barcha holatlar</option><option value="new">Yangi</option><option value="in_progress">Ko'rib chiqilmoqda</option><option value="answered">Javob berilgan</option><option value="closed">Yopilgan</option></select></div><div id="request-list" class="request-list"></div></section>
+          <section id="bot-users-panel" class="content-panel hidden"><div class="toolbar single-toolbar"><label class="search-field"><span data-ui-icon="search"></span><input id="bot-user-search" type="search" placeholder="Ism, username yoki Telegram ID bo'yicha qidirish"></label></div><div id="bot-user-list" class="request-list"></div></section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal-backdrop" data-close-modal></div><div class="modal-card">
+    <div class="modal-head"><div><p class="section-badge">Katalog yozuvi</p><h2 id="modal-title">Yangi OSINT vositasi</h2></div><button class="close-button" type="button" data-close-modal aria-label="Yopish"><span data-ui-icon="x"></span></button></div>
+    <form id="tool-form" class="edit-form hidden"><input name="id" type="hidden"><div class="form-grid">
+      <label>Vosita nomi *<input name="name" required placeholder="Masalan: Etherscan"></label><label>Qisqa slug *<input name="slug" required pattern="[a-z0-9-]+" placeholder="etherscan"></label>
+      <label>Tekshiruv yo'nalishi *<select name="category_id" required></select></label>
+      <label>Kartochka ikoni<span class="icon-input"><span id="tool-icon-preview" class="icon-preview" aria-hidden="true"><img class="icon-image" alt=""><span class="icon-text">OS</span></span><input name="icon" maxlength="500" list="icon-presets" placeholder="auto, telegram yoki rasm URL'i"></span><small><b>auto</b> — xizmat logosi avtomatik olinadi; brend nomi, rasm URL'i yoki <b>text:IP</b> ham mumkin.</small></label>
+      <label class="full">Kartochka uchun qisqa tavsif<textarea name="description" rows="3" placeholder="Vositaning tekshiruv doirasidagi vazifasini qisqacha bayon eting."></textarea></label>
+      <label class="full">Vosita orqali amalga oshiriladigan tekshiruvlar<textarea name="details" rows="7" placeholder="Mazkur vosita yordamida aniqlanishi yoki tekshirilishi mumkin bo'lgan ma'lumotlarni yozing."></textarea><small>Har bir imkoniyatni yangi qatorda <b>-</b> belgisi bilan boshlashingiz mumkin.</small></label>
+      <label class="full">Asosiy sayt manzili *<input name="url" type="url" required placeholder="https://example.com/"></label>
+      <label class="full">Indikator bilan ochiladigan manzil<input name="query_url_template" placeholder="https://example.com/search?q={query}"><small>Ixtiyoriy. Indikator o'rniga <b>{query}</b> qiymatini kiriting.</small></label>
+      <label>Tekshiriladigan ma'lumot turlari<input name="input_types" placeholder="wallet, tx-hash, domain"><small>Qiymatlarni vergul bilan ajrating.</small></label><label>Tarmoq/platformalar<input name="networks" placeholder="BTC, ETH, Telegram"></label><label>Teglar<input name="tags" placeholder="Explorer, Graph, Free"></label>
+      <div class="checks full"><label><input name="featured" type="checkbox"> Yo'nalish ichida ustuvor ko'rsatilsin</label><label><input name="login_required" type="checkbox"> Login talab qiladi</label><label><input name="enabled" type="checkbox" checked> Katalogda e'lon qilinsin</label></div>
+    </div><div class="form-actions"><button type="button" class="secondary-button" data-close-modal>Bekor qilish</button><button type="submit" class="primary-button">Saqlash</button></div></form>
+
+    <form id="category-form" class="edit-form hidden"><input name="id" type="hidden"><div class="form-grid">
+      <label>Tekshiruv yo'nalishi nomi *<input name="name" required placeholder="Masalan: Kriptoaktivlar tahlili"></label><label>Qisqa slug *<input name="slug" required pattern="[a-z0-9-]+" placeholder="crypto"></label>
+      <label>Kartochka ikoni<span class="icon-input"><span id="category-icon-preview" class="icon-preview" aria-hidden="true"><img class="icon-image" alt=""><span class="icon-text">OS</span></span><input name="icon" maxlength="500" list="icon-presets" placeholder="auto, bitcoin yoki rasm URL'i"></span><small><b>auto</b> — yo'nalishga mos ikon; rasm URL'i yoki <b>text:@</b> ham mumkin.</small></label>
+      <label class="full">Kartochka uchun qisqa tavsif<textarea name="description" rows="3"></textarea></label><label class="full">Yo'nalish doirasida amalga oshiriladigan tekshiruvlar<textarea name="details" rows="7" placeholder="Tekshiruv imkoniyatlarini rasmiy va aniq shaklda bayon eting."></textarea><small>Ushbu matn “Batafsil” oynasida ko'rsatiladi.</small></label><label class="full">Teglar<input name="tags" placeholder="BTC, ETH, TRON"><small>Vergul bilan ajrating.</small></label>
+      <div class="checks full"><label><input name="featured" type="checkbox"> Birinchi qatorga chiqarish</label><label><input name="enabled" type="checkbox" checked> Katalogda e'lon qilinsin</label><small class="priority-help">Birinchi qator uchun ko'pi bilan 3 ta yo'nalish tanlanadi. Qolgan tartib avtomatik belgilanadi.</small></div>
+    </div><div class="form-actions"><button type="button" class="secondary-button" data-close-modal>Bekor qilish</button><button type="submit" class="primary-button">Saqlash</button></div></form>
+    <div id="form-error" class="form-error hidden"></div>
+    <datalist id="icon-presets"><option value="auto"><option value="telegram"><option value="bitcoin"><option value="ethereum"><option value="monero"><option value="tron"><option value="etherscan"><option value="google"><option value="github"><option value="shodan"><option value="virustotal"><option value="text:@"><option value="text:IP"><option value="text:DNS"><option value="text:EXIF"></datalist>
+  </div></div>
+
+  <div id="request-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="request-modal-title"><div class="modal-backdrop" data-close-request-modal></div><div class="modal-card request-modal-card"><div class="modal-head"><div><p class="section-badge">Mutaxassis murojaati</p><h2 id="request-modal-title">Murojaat</h2></div><button class="close-button" type="button" data-close-request-modal aria-label="Yopish"><span data-ui-icon="x"></span></button></div><div id="request-detail" class="request-detail"></div><form id="request-reply-form" class="request-reply-form"><label>Mutaxassis javobi<textarea name="text" rows="6" placeholder="Tekshiruv natijasi, tavsiyalar va zarur izohlarni rasmiy shaklda yozing."></textarea></label><label>Javob fayllari<input name="files" type="file" multiple><small>Ko'pi bilan 5 ta fayl; har biri 20 MB, jami 30 MB gacha.</small></label><div class="form-actions"><button id="save-request-button" type="button" class="secondary-button">Holat va ichki izohni saqlash</button><button type="submit" class="primary-button">Javobni Telegram orqali yuborish</button></div><div id="request-form-error" class="form-error hidden"></div></form></div></div>
+  <div id="toast" class="toast hidden" role="status"></div>
+</body>
+</html>

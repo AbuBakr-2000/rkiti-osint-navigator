@@ -1,0 +1,38 @@
+# Maxfiy environment qiymatlari
+.env
+.env.*
+!.env.example
+
+# Ishlayotgan tizim ma'lumotlari
+data/*.sqlite3
+data/*.db
+data/bot-replies/
+data/uploads/
+data/evidence/
+bot-flow-*/
+
+# Python va virtual muhit
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Log, backup va tayyor arxivlar
+*.log
+*.bak
+*.backup
+*.zip
+*.tar.gz
+deliverables/
+
+# Muharrir va operatsion tizim fayllari
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Kalit va sertifikatlarning yopiq qismlari
+*.pem
+*.key
+*.p12
+*.pfx
